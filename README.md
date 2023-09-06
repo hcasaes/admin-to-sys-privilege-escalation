@@ -1,8 +1,8 @@
 # admin-to-sys-privilege-escalation
-This is a very simple privilege escalation technique, from admin to System. This is the same technique PSExec uses.
+Esta é uma técnica de escalonamento de privilégios muito simples, do administrador para o sistema. Esta é a mesma técnica que o PSExec usa.
 
-1) Scan all processes for System token.<br>
-2) Copy System token.<br>
-3) Adjust Current token.<br>
-4) Start process as System.<br>
-5) Revert to self.<br>
+1) Verifique todos os processos em busca de token do sistema.<br>
+2) Copie o token do sistema.<br>
+3) Ajuste o token atual.<br>
+4) Inicie o processo como Sistema.<br>
+5) Reverter para si mesmo.<br>
