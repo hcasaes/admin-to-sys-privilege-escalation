@@ -14,25 +14,35 @@ O PSExec pode ser usado para uma variedade de tarefas, incluindo:
 Executar scripts remotamente
 Executar tarefas administrativas remotamente
 Executar diagnósticos remotos
-O PSExec é uma ferramenta poderosa que pode ser usada para automatizar tarefas e gerenciar computadores remotamente. No entanto, é importante usá-lo com cautela, pois pode ser usado para fins maliciosos.
+O PSExec é uma ferramenta poderosa que pode ser usada para automatizar tarefas e gerenciar computadores remotamente.
+No entanto, é importante usá-lo com cautela, pois pode ser usado para fins maliciosos.
 
 Para usar o PSExec, você precisa instalar o utilitário no computador local e no computador remoto. Depois de instalado, você pode usar o seguinte comando para executar um comando remotamente:
 
-psexec \\computername command
+  <code>psexec \\computername command</code>
+
 Onde:
 
-\\computername é o nome do computador remoto
-command é o comando que você deseja executar
+<code>\\computername</code> é o nome do computador remoto
+
+<code>command</code> é o comando que você deseja executar
+
 Por exemplo, o seguinte comando executará o comando dir no computador remoto chamado server1:
 
-psexec \\server1 dir
+<code>psexec \\server1 dir</code>
+
 O PSExec também pode ser usado para executar comandos com privilégios elevados. Para fazer isso, você pode usar o seguinte comando:
 
-psexec \\computername -s command
+<code>psexec \\computername -s command</code>
+
 Onde:
 
--s é a opção que especifica que o comando deve ser executado com privilégios elevados
-Por exemplo, o seguinte comando executará o comando shutdown /r /t 0 no computador remoto chamado server1 com privilégios elevados:
+<code>-s</code> é a opção que especifica que o comando deve ser executado com privilégios elevados
 
-psexec \\server1 -s shutdown /r /t 0
-O PSExec é uma ferramenta útil que pode ser usada para automatizar tarefas e gerenciar computadores remotamente. No entanto, é importante usá-lo com cautela, pois pode ser usado para fins maliciosos.
+Por exemplo, o seguinte comando executará o comando <code>shutdown /r /t 0</code> no computador remoto chamado server1 com privilégios elevados:
+
+<code>psexec \\server1 -s shutdown /r /t 0</code>
+
+O PSExec é uma ferramenta útil que pode ser usada para automatizar tarefas e gerenciar computadores remotamente.
+
+*No entanto, é importante usá-lo com cautela, pois pode ser usado para fins maliciosos.
